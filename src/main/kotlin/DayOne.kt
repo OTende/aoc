@@ -1,7 +1,7 @@
 import java.io.File
 
 object DayOne {
-    private val input = File("/home/egor/Downloads/input.txt").readLines().map { it.toInt() }
+    private val input = File("input/day1.txt").readLines().map { it.toInt() }
 
     fun partOne(): Int {
         return input.zipWithNext().count { (first, second) -> first < second }
