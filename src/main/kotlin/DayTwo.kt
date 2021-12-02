@@ -1,9 +1,9 @@
 import java.io.File
 
 object DayTwo {
-    class Position(val direction: String, val value: Int)
+    private class Position(val direction: String, val value: Int)
 
-    data class Submarine(var vertical: Int, var horizontal: Int, var aim: Int = 0)
+    private data class Submarine(var vertical: Int, var horizontal: Int, var aim: Int = 0)
 
     private val input = File("input/day2.txt")
         .readLines()
